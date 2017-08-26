@@ -1,0 +1,64 @@
+#container {
+    height:70%;
+    width:100%;
+    z-index: 1;
+}
+
+#music, #compsci {
+    height: 100%;
+    width: calc(50% - 100px);
+    position: relative;
+    z-index: 2;
+}
+
+#music {
+    float: left;
+    background-image: url('./app/contentArea/music_background.jpg');
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.button, a {
+    background-color: transparent;
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+#compsci {
+    float: right;
+    background-image: url('./app/contentArea/compsci_background.jpg'); 
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#music::after, #compsci::after {
+    position: absolute;
+    top: 0px;
+    content: '';
+    z-index: -1;
+    height: 100%;
+    width: 25%;
+    background: black;
+}
+
+#music::after {
+    right: 0;
+    transform-origin: bottom right;
+    transform: skewX(-15deg);
+}
+
+#compsci::after {
+    left: 0;
+    transform-origin: top left;
+    transform: skewX(-15deg);
+}

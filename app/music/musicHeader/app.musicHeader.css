@@ -1,0 +1,24 @@
+div {
+    background-color: black;
+    overflow: hidden;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+}
+
+i {
+    float: right;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: block;
+    padding: 3px;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}

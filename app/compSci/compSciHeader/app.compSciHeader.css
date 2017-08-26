@@ -1,0 +1,11 @@
+div {
+    background-color: black;
+    overflow: hidden;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+}

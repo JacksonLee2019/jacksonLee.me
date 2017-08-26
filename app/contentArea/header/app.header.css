@@ -1,0 +1,11 @@
+.header {
+    background-color: black;
+    overflow: hidden;
+}
+
+.header h1 {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+}
